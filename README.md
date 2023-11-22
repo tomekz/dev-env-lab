@@ -1,17 +1,21 @@
-1. Start the development container.
+The goal of this repo is to have a sandbox environment where I can test out my local dev environment setup including but not only nvim configuration or my zsh customizations
+
+## Start
+
+* start development container
 
 ```bash
-docker-compose up -d
+docker-compose up --build
 ```
 
-2. Start and rebuild the development container.
+* exec into container
 
-```bash
-docker-compose up --build --force-recreate
+```
+docker exec -it dev-env-lab-app-1 bash
 ```
 
-3. Execute a command within the container.
+* clone and install dotfiles (requires ssh key to be added to github) 
 
-```bash
-docker-compose exec 
+```
+git@github.com:tomekz/dotfiles.git
 ```

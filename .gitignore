@@ -1,0 +1,12 @@
+.ssh
+.bash_history
+.local
+.cache
+dotfiles
+nvim-linux64
+.shell.pre-oh-my-zsh
+.z
+.zshrc
+.zcompdump*
+.zsh_history
+.oh-my-zsh
