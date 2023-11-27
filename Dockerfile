@@ -5,6 +5,11 @@ RUN apt-get update && apt-get install -y \
     git \
     curl \
     stow \
-    fzf
+    fzf 
+
+
+# Dokcer based images doesn't ship with locales. We need to install them manually
+RUN apt-get update && apt-get install -y language-pack-en \
+    && update-locale LANG=en_US.UTF-8 
 
 WORKDIR /root
