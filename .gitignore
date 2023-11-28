@@ -4,10 +4,11 @@ ssh
 .local
 .cache
 dotfiles
-nvim-linux64
+nvim
 .shell.pre-oh-my-zsh
 .z
 .zshrc
 .zcompdump*
 .zsh_history
 .oh-my-zsh
+.lesshst
