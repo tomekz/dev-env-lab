@@ -19,3 +19,10 @@ docker exec -it dev-env-lab-app-1 bash
 ```
 git@github.com:tomekz/dotfiles.git
 ```
+
+# TODO
+
+- [ ] setup direnv and add .envrc
+- [ ] combine direnv with nix using nix-direnv plugin
+- [ ] test loading sample nix shell 
+
