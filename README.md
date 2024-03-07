@@ -20,8 +20,26 @@ docker exec -it dev-env-lab-app-1 bash
 git@github.com:tomekz/dotfiles.git
 ```
 
+## Nix
+
+Getting started with nix
+
+Start a docker shell with nix exposing workdir directory
+
+```bash
+mkdir workdir
+docker run -it -v $(pwd)/workdir:/workdir nixos/nix
+```
+
+Once inside the container, create a new nix shell
+
+```bash
+nix-shell -p neovim
+```
+
 # TODO
 
+- [ ] install nix
 - [ ] setup direnv and add .envrc
 - [ ] combine direnv with nix using nix-direnv plugin
 - [ ] test loading sample nix shell 

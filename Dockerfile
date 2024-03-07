@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     stow \
     fzf \
-    build-build-essential
+    build-essential
 
 COPY install-nvim install-nvim
 
