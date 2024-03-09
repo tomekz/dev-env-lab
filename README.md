@@ -24,23 +24,24 @@ git@github.com:tomekz/dotfiles.git
 
 Getting started with nix
 
-Start a docker shell with nix exposing workdir directory
+Start a docker shell with nix exposing nix-workdir directory
 
 ```bash
-mkdir workdir
-docker run -it -v $(pwd)/workdir:/workdir nixos/nix
+docker run -it -v $(pwd)/nix-workdir:/workdir nixos/nix
 ```
 
-Once inside the container, create a new nix shell
+Once inside the container, start a new nix shell using declarative nix shell file
 
 ```bash
-nix-shell -p neovim
+cd /workdir
+nix-shell
 ```
+
 
 # TODO
 
-- [ ] install nix
+- [x] install nix
 - [ ] setup direnv and add .envrc
 - [ ] combine direnv with nix using nix-direnv plugin
-- [ ] test loading sample nix shell 
+- [x] test loading sample nix shell 
 

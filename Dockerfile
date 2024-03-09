@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     stow \
     fzf \
+    direnv \
     build-essential
 
 COPY install-nvim install-nvim
